@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>La bataille de Faërun</title>
+</head>
+
+<body>
+    <audio id="backgroundSound" src="Y2meta.app - Classic Summoner's Rift Champion Select - Draft Pick (From League of Legends_ Season 1) (320 kbps).mp3" loop></audio>
+
+    <audio id="startSound" src="Y2meta.app - League Of Legends Original Sounds - Welcome To Summoner's Rift (320 kbps).mp3"></audio> 
+    <audio id="victorysound" src="Y2meta.app - Victory! (Classic League of Legends Announcer) - Sound Effect for editing (128 kbps).mp3"></audio> 
+
+
+    <Div class="welcome">
+            <h3> 
+               Welcome To The Battle of Faerun  
+            </h3>
+            
+            <button id="startBtn" onclick="startBattle()">Start</button>
+        </div>
+
+        <div class="welcome message" id="message1">
+            <h3>Let The Battle Begins !!</h3>
+        </div>
+    
+        <div class="welcome message" id="message2">
+            <h3>Click On Your Side And Train Your Warriors!</h3>
+        </div>
+
+
+        <div class="welcome message" id="message3" style="display: none; opacity: 1; transition: opacity 0.5s ease 0s;"> <!-- Initially hide message 3 -->
+            <h3>Are You Done Training?</h3>
+            <button id="yes" >Yes</button>
+        </div>
+
+        <div class="welcome message" id="message4" style="display: none; opacity: 1; transition: opacity 0.5s ease 0s;"> <!-- Initially hide message 3 -->
+            <h3>The Warriors Will Start Moving</h3>
+               </div> 
+               <div class="welcome message" id="message5" style="display: none; opacity: 1; transition: opacity 0.5s ease 0s;"> <!-- Initially hide message 3 -->
+
+                <h3>Looks like a fight is about to happen ! </h3>
+                   </div>
+                   <div class="welcome message" id="message6" style="display: none; opacity: 1; transition: opacity 0.5s ease 0s;"> <!-- Initially hide message 3 -->
+
+                    <h3></h3>
+
+                    
+                       </div>
+
+                       <div id="message7"> <!-- Initially hide message 3 -->
+                          </div>
+
+    
+ 
+    <table border="0" class="table" id="grid">
+        <tr id="side">
+            <td id="1"></td>
+            <td id="2" ></td>
+            <td id="3"></td>
+            <td id="4"></td>
+            <td id="5"></td>
+            
+        </tr>
+    </table>
+
+
+    <div class="select" id="selectDiv"> 
+        <fieldset>
+            <div >
+                <button class="prev" id="prevButton">&lt;</button>
+                <center>
+                    <h4 ></h4>
+                    <img src="" alt="Resource image" id="image">
+                    <h4 id="imageName"></h4>
+
+                </center>
+                <button class="next" id="nextButton">&gt;</button>
+            </div>
+            <center>
+                <button id="trainBtn">Train</button>
+            </center>
+        </fieldset>
+    </div>
+<center>
+    <div id="message-container" class="alert"></div>
+
+</center>
+
+    
+    
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

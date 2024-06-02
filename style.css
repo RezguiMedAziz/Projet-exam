@@ -1,0 +1,194 @@
+html {
+    background-image: url("Pics/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.welcome {
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 40px;
+    color: rgb(148, 202, 170);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+    font-style: italic;
+}
+
+button {
+    background-color: rgb(80, 135, 102); /* Background color */
+    border: none; /* Remove border */
+    padding: 20px 40px; /* Adjust padding */
+    font-size: 24px; /* Adjust font size */
+    color: white; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Box shadow for 3D effect */
+    transition: all 0.3s ease; /* Transition for click animation */
+    font-style: italic;
+}
+
+button:hover {
+    background-color: rgb(60, 202, 136); /* Background color on hover */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7); /* Increased shadow on hover */
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+button:active {
+    transform: scale(0.9); /* Scale down on click */
+}
+
+#grid {
+    display: none; /* Initially hide the grid */
+}
+
+.table {
+    margin-top: 430px; /* Adjust the margin as needed */
+    margin-left: 150px;
+    font-size: 50px;
+    padding-left: 1030px;
+    padding-top: 100px;
+    margin-bottom: 50px;
+    border-collapse: collapse; 
+    width: 78%;
+    border-radius: 30px; /* Rounded corners for the table */
+    box-shadow: 0 0 20px rgba(218, 225, 220, 0.5); /* Apply a 3D effect to the table */
+}
+
+.table td {
+    width: calc(100% / 10); /* Divide the table width equally among 5 columns */
+    height: 220px; /* Set the height of the cells */
+    text-align: center; /* Center align text */
+    border-radius: 30px; /* Rounded corners for the cells */
+    opacity: 0; /* Initially set opacity to 0 to hide cells */
+}
+
+.table td:nth-child(1),
+.table td:nth-child(2) {
+    box-shadow: 0 0 20px rgba(12, 69, 167, 0.5); /* Blue shadow for the first two cells */
+}
+
+.table td:nth-child(4),
+.table td:nth-child(5) {
+    box-shadow: 0 0 20px rgba(163, 15, 15, 0.5); /* Red shadow for the last two cells */
+}
+
+.table td:nth-child(3) {
+    box-shadow: 0 0 20px rgba(171, 177, 173, 0.5); /* Green shadow for the middle cell */
+}
+
+.message {
+    position: absolute; 
+    top: 20%;
+    left: 48%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 40px;
+    color: rgb(148, 202, 170);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+    opacity: 0; /* Initially hide the message */
+}
+
+
+.select {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(148, 202, 175, 0.65); /* Semi-transparent greenish background color */
+    box-shadow: 0 0 20px rgba(148, 202, 170, 0.5); /* Blurry effect */
+    border-radius: 10px;
+    font-size: 30px; 
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.select fieldset {
+    border: none;
+    padding: 20px; /* Adjust as needed */
+}
+
+  
+
+
+
+.select img {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Light border */
+    border-radius: 50%; /* Make the image circular */
+    margin: 10px; /* Add margin between images */
+}
+
+
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.alert {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(48, 121, 108, 0.8); /* Semi-transparent greenish background color */
+    box-shadow: 0 0 20px rgba(48, 121, 108, 0.5); /* Blurry effect */
+    border-radius: 10px;
+    font-size: 30px; 
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+      @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    .fade-out {
+        animation: fadeOut 1s forwards; /* 1s for the duration of the animation */
+    }
+    
+
+    /* Add this CSS to your stylesheet */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Ensure the container covers the entire viewport height */
+}
+
+.victory-image {
+    max-width: 120%; /* Make sure the image fits within the container */
+    max-height: 120%; /* Make sure the image fits within the container */
+    opacity: 0; /* Initially hide the image */
+    animation: fadeIn 0.5s ease-in-out forwards; /* Apply the fade-in animation */
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start with 0 opacity */
+    }
+    to {
+        opacity: 1; /* End with 1 opacity */
+    }
+}
